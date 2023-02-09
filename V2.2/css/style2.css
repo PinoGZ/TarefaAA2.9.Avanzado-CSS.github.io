@@ -1,0 +1,199 @@
+body {
+  font-family: IGB;
+  text-align: center;
+  background-color: #3f3f3f;
+}
+
+header#main header {
+  padding: 20px;
+}
+
+header h1 {
+  color: #f11111;
+
+  text-shadow: -5px 5px 0px #ffd000;
+  border-radius: 40px;
+  margin: 0;
+  font-size: 36px;
+}
+
+table {
+  margin: 0 auto;
+  width: 80%;
+}
+
+td {
+  padding: 20px;
+  text-align: left;
+   
+}
+
+td p{
+  text-align: center;
+  background-color:#ffd000;
+  color:#ff0000;
+  border-radius: 200px;
+  
+   
+}
+
+a {
+  color: #ffd000;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #ff0000;
+  border-radius: 40px;
+}
+
+h2 {
+  margin: auto;
+  text-align: center;
+  color: #f11111;
+
+  text-shadow: -5px 3px 0px #ffd000;
+  border-radius: 40px;
+  font-size: 24px;
+
+  height: 50%;
+  width: 50%;
+}
+
+
+section p {
+  border-radius: 40px;
+  color: #f11111;
+  background-color: #ffd000;
+  font-size: 18px;
+  margin: 20px 20px;
+}
+
+iframe {
+  width: 560px;
+  height: 315px;
+  border: 0;
+}
+
+.personajesCONJ {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+ 
+}
+
+.billboard {
+  background-color: white;
+  border-radius: 200px;
+}
+.billboard:hover {
+  box-shadow: 0 0 30px red;
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+.personaje {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 150px 150px;
+  background:#3f3f3f;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+  transition: 1s;
+}
+
+.personaje:hover {
+  transform: translateX(50%);
+}
+.personaje .CharacterPic img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-origin: left;
+  z-index: 1;
+  transform-style: preserve-3d;
+  background: #ff0000fb;
+  transition: 1s;
+}
+.personaje:hover .CharacterPic {
+  transform: rotateY(-180deg);
+  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+}
+.personaje .CharacterPic img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.personaje .CharacterPic img:nth-child(2) {
+  transform: rotateY(180deg);
+}
+.personaje .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.personaje .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.personaje .content h5 {
+  text-align: center;
+  font-weight: 700;
+  line-height: 1em;
+  color:#ff0000;
+}
+
+
+.personaje .content h5 span {
+  color: #1a1a1a;
+  font-size: 0.8em;
+}
+
+form {
+  background-color: #ffd000;
+  color: #ff0000;
+  border-radius: 70px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+input {
+  border-radius: 70px;
+  display : block;
+
+  padding : 10px;
+  margin-top: 15px;
+  margin-left: 15%;
+  margin-right: 15%;
+  width   : 70%;
+  height  : 90%;
+
+  border-right: 1px solid;
+  overflow: auto;
+}
+
+
+
+@font-face {
+  margin: 10px;
+  padding: 10px;
+  font-family: IGB; /*IGB stands for InGlorious Basterds que es el nombre original de la pericula */
+  src: url(../fonts/Fette\ Egyptienne.ttf);
+}
