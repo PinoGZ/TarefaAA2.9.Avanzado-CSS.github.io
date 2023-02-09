@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .movie-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .movie-container > div {
+    flex: 1;
+    margin: 8px;
+    padding: 10px;
+    background-color: #eee;
+  }
+  .movie-container > div > img {
+    width: 100%;
+  }
+  @media (max-width: 600px) {
+    .movie-container {
+      flex-direction: column;
+    }
+  }
